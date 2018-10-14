@@ -1,4 +1,5 @@
 **Finding Lane Lines on the Road**
+
 **Steven Moffatt - October 14, 2018**
 
 The goals / steps of this project are the following:
@@ -26,17 +27,27 @@ The goals / steps of this project are the following:
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 5 steps:
+
 1). Converted the image to grayscale & applied gaussian blur. 
+
 2). Extracted the edges to lines using Canny detection. 
+
 3). Extracted those edges in the region of interest (polygon).
+
 4). Performed hough processing on the remaining edges to identify lane lines.  
+
 5). Displayed the lane lines overlayed on the base image with weighting function.  
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() to:
+
 1). calculated lines slope and y-intercept. 
+
 2). Seperated positive and negative slope lines into different processes. 
+
 3). Averaged the slopes and intercepts for both left and right. 
+
 4). Ran edge case processing to cancel processing of 1). no line found or 2). vertical line found.
+
 5). Generated the overlayed line by using the limit y-values of the region of interest. 
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
