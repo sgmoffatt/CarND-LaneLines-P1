@@ -15,7 +15,16 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./test_images_output/P1_solidWhiteCurve.jpg
+[image2]: ./test_images_output/P1_solidWhiteRight.jpg
+[image3]: ./test_images_output/P1_solidYellowCurve.jpg
+[image4]: ./test_images_output/P1_solidYellowCurve2.jpg
+[image5]: ./test_images_output/P1_solidYellowLeft.jpg
+[image6]: ./test_images_output/P1_whiteCarLaneSwitch.jpg
+
+[video1]: ./test_videos_output/P1_solidWhiteRight.mp4
+[video2]: ./test_videos_output/P1_solidYellowLeft.mp4
+
 
 ---
 
